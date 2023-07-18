@@ -66,6 +66,10 @@ body {
     padding: .5rem;
 }
 
+#button-check {
+    cursor: pointer;
+}
+
 /* Footer */
 .footer {
     height: 10vh;
