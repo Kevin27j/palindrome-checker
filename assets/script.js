@@ -2,10 +2,19 @@ const resultContainer = document.querySelector(".result-container");
 const resultText = document.querySelector("#result-text");
 const textInput = document.querySelector("#text-input");
 const buttonCheck = document.querySelector("#button-check");
+console.log(textInput.textContent)
 
 // Add eventListener for buttonCheck
-    // Check if textInput is palindrome, return resultText "Is palidndrome"
-    // else return resultText "Not palindrome"
+buttonCheck.addEventListener("click", () => {
+    // Check if textInput is palindrome, return resultText "Is palindrome"
+    if(!palindrome(textInput.textContent)){
+        resultText.innerText += "Not palindrome";
+    } else {
+        // else return resultText "Not palindrome"
+        resultText.innerText += "Is palindrome";
+    }
+})
+
 
 
 function palindrome(str) {
@@ -15,8 +24,8 @@ function palindrome(str) {
     let reverseStr = newStr.split("").reverse().join("");
 
     if (newStr !== reverseStr) {
-        return false
+        return false;
     } else {
-        return true
+        return true;
     }
 }
