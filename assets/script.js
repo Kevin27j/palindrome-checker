@@ -19,20 +19,28 @@ function palindrome(str) {
 
 // Check if input string is palindrome when button is clicked
 buttonCheck.addEventListener("click", () => {
-    // Create a new <h4> element with result text, and append to parent container
-    // Make sure to append new element only if it doesn't already exist
-    let result = document.querySelector("#result-text");
-    if(!result){
-        result = document.createElement("h4");
-        result.setAttribute("id", "result-text");
-        resultContainer.appendChild(result);
-    }
+    // Handle non-empty strings inputs
+    if (textInput.value.trim() !== "") {
 
-    // Check if textInput is palindrome, return resultText "Is palindrome"
-    if(palindrome(textInput.value)){
-        result.innerText = "Is palindrome";
+        // Create a new <h4> element with result text, and append to parent container
+        // Make sure to append new element only if it doesn't already exist
+        let result = document.querySelector("#result-text");
+        if (!result) {
+            result = document.createElement("h4");
+            result.setAttribute("id", "result-text");
+            resultContainer.appendChild(result);
+        }
+
+        // Check if textInput is palindrome, return resultText "Is palindrome"
+        if (palindrome(textInput.value)) {
+            result.innerText = "Is palindrome";
+        } else {
+            // else return resultText "Not palindrome"
+            result.innerText = "Not palindrome";
+        }
+        
+    // Handle empty strings and whitespace inputs
     } else {
-        // else return resultText "Not palindrome"
-        result.innerText = "Not palindrome";
+        resultContainer.innerHTML = "";
     }
 })
