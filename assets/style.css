@@ -5,6 +5,8 @@
 
 body {
     box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-size: medium;
 }
 
 /* Header */
@@ -14,8 +16,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1.5rem 1rem;
-
-    background-color: coral;
+    background-color: #F17300;
 }
 
 /* Main section */
@@ -24,8 +25,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background-color: blanchedalmond;
+    background-color: #EFEFEF;
 }
 
 /* Palindrome Card */
@@ -35,35 +35,37 @@ body {
     align-items: center;
     border-radius: 15px;
     width: 280px;
-    height: 18rem;
+    height: 20rem;
     margin-bottom: 15rem;
-
-    background-color: turquoise;
-}
+    background-color: #C2D5E3;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;}
 
 /* Output Card */
 .result-container {
     display: flex;
     justify-content: center;
     padding: 1.5rem;
-    margin: 2rem 0 2.5rem;
+    margin: 2.5rem 0 2rem;
     border-radius: 10px;
     width: 170px;
     height: 18px;
-
-    background-color: bisque;
+    background-color: #C2D5E3;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .form-input {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    margin-top: .8rem;
+    gap: 1rem;
 }
 
 .input-el {
     border: none;
-    border-radius: 5px;
-    padding: .5rem;
+    border-radius: 10px;
+    padding: .7rem 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 #button-check {
@@ -77,6 +79,5 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-    background-color: darkcyan;
+    background-color: #F17300;
 }
