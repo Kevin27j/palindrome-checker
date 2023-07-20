@@ -34,9 +34,11 @@ buttonCheck.addEventListener("click", () => {
         // Check if textInput is palindrome, return resultText "Is palindrome"
         if (palindrome(textInput.value)) {
             result.innerText = "Is palindrome";
+            resultContainer.style.backgroundColor = "#D4F710";
         } else {
             // else return resultText "Not palindrome"
             result.innerText = "Not palindrome";
+            resultContainer.style.backgroundColor = "#F53D00";
         }
         
     // Handle empty strings and whitespace inputs
