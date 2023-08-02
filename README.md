@@ -26,6 +26,9 @@ Users should be able to:
 
 ### Screenshot
 
+[Mobile Page](./assets/screenshots/mobile-01.png)
+[Mobile palindrome](./assets/screenshots/mobile-02.png)
+[Mobile not palindrome](./assets/screenshots/mobile-03.png)
 
 ### Links
 
